@@ -72,13 +72,13 @@ export AWS_DEFAULT_REGION=ru-central1
 aws --endpoint-url https://storage.yandexcloud.net s3 ls          # видим бакет
 echo "hi" > test.txt
 aws --endpoint-url https://storage.yandexcloud.net \
-    s3 cp test.txt s3://<bucket_name>/
+s3 cp test.txt s3://<bucket_name>/
 aws --endpoint-url https://storage.yandexcloud.net \
-    s3 ls s3://<bucket_name>/                                       # видим файл
+s3 ls s3://<bucket_name>/                                       # видим файл
 
 # 6. очистка бакета (если force_destroy=false)
 aws --endpoint-url https://storage.yandexcloud.net \
-    s3 rm s3://<bucket_name> --recursive
+s3 rm s3://<bucket_name> --recursive
 
 # 7. удаление инфраструктуры
 terraform destroy -auto-approve
