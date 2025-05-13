@@ -13,6 +13,3 @@ module "s3_bucket" {
   sa_access_key   = var.sa_access_key
   sa_secret_key   = var.sa_secret_key
 }
-
-output "bucket_name" { value = module.s3_bucket.bucket_id }
-output "endpoint"    { value = module.s3_bucket.s3_endpoint }
