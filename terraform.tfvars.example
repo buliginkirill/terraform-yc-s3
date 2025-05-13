@@ -1,0 +1,6 @@
+# Удалите из названия файла .example
+# -----  заполните своими значениями  -----
+bucket_name     = "my-unique-bucket-name"
+
+sa_access_key   = "YCAJXXXXXXXXXXXXXXXXXXXX"
+sa_secret_key   = "YCPXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
